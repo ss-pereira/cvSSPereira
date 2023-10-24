@@ -1,0 +1,401 @@
+/* estilo.css */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black:regular");
+
+
+
+
+.body{
+  background: #19192a;
+}
+
+
+
+.contenedor {
+    display: flex;
+    background-color: transparent;
+    opacity: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+    
+   
+}
+
+/* Estilos para el cuadro rojo */
+.cuadro-rojo {
+    width: 90px;
+    height: 110px;
+    background-color: #ff1616;
+    margin-right: 20px;
+    position: relative;
+  
+}
+
+.cuadro-rojo img {
+    width: 120px;
+    height: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+
+/* Estilos para el nombre */
+.nombre {
+    display: flex;
+    align-items: center;
+    margin-left: 40px ;
+    color: white;
+    
+}
+
+/* Estilos para encabezados */
+h1, h2, h3 {
+    font-family: 'Archivo Black', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: xx-large;
+    
+}
+
+h2.letrasRojas {
+  display: flex;
+    font-size: 18px;
+    color: #ff1616;
+    margin-top: 80px;
+    text-align: left;
+    margin-left: -290px;
+}
+
+/* Estilos para listas en la columna derecha */
+.listaRojo {
+    list-style-type: none;
+    padding: 0;
+    font-size: large;
+}
+
+.listaRojo li::before {
+    content: "•";
+    color: #ff1616;
+    margin-right: 8px;
+}
+
+/* Estilos para la tabla en la columna izquierda */
+.tabla {
+  width: 100%;
+  border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
+  border: 1px solid #ffffff; /* Borde de la tabla */
+  margin-top: 25px;
+  z-index: 2;
+  
+  
+}
+
+table th {
+    padding: 8px;
+    text-align: left;
+    border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
+  border: 1px solid #fff3f3; /* Borde de la tabla */
+  background-color: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+table td {
+  padding: 8px;
+  text-align: left;
+  border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
+border: 1px solid #fff3f3; /* Borde de la tabla */
+background-color: rgb(60, 60, 60);
+z-index: 2;
+}
+
+/* Estilos generales para el cuerpo del CV */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos para la columna izquierda */
+.izquierda {
+    width: 70%;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para la columna derecha */
+.derecha {
+    width: 30%;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para encabezados en la columna derecha */
+.letraColorBlanco {
+    color: white;
+    font-size: larger;
+}
+
+/* Estilos para el contenedor del nombre y el cuadro rojo */
+.nombre-cuadro {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.sobreMi{
+  margin-top: 55px;
+  font-size: larger;
+  color: white;
+}
+
+.contacto{
+  margin-left: -20px;
+}
+
+#particles-js{
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.contacto {
+  list-style: none; /* Oculta las viñetas predeterminadas */
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+ font-size: large;
+}
+
+
+.contacto li {
+  margin-left: 20px; /* Espacio a la izquierda para las imágenes */
+  background: url('celular.png') no-repeat left center; /* URL de la primera imagen */
+  background-size: 25px 25px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  padding-left: 45px; /* Espacio para la imagen a la izquierda del texto */
+  margin-bottom: 20px;
+
+  /* Repite estos estilos para cada elemento de la lista y cambia la URL de la imagen */
+}
+
+/* Repite estos estilos para cada elemento de la lista */
+.contacto li:nth-child(2) {
+  margin-left: 20px; 
+  background: url('mail.png') no-repeat left center; 
+  background-size: 25px 25px; 
+  padding-left: 45px; 
+}
+
+.contacto li:nth-child(3) {
+  margin-left: 20px; 
+  background: url('direccion.png') no-repeat left center; 
+  background-size: 25px 25px; 
+  padding-left: 45px; 
+}
+
+.contacto li:nth-child(4) {
+  margin-left: 20px; 
+  background: url('linkedin.png') no-repeat left center; 
+  background-size: 25px 25px; 
+  padding-left: 45px; 
+}
+
+.boton{
+position: absolute;
+right: 10px;
+top: 10px;
+z-index: 1;
+
+}
+
+#desactivador {
+color: white;
+  border-radius: 10px;
+  background: #ff1616;
+  cursor: pointer;
+  
+}
+
+a {
+color: white;
+}
+
+a:hover{
+  color: red;
+}
+
+/*CSS Responsive a partir de aca*/
+
+
+
+
+@media screen and (max-width: 426px) {
+  .izquierda {
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .derecha {
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+  .contenedor {
+    display: flex;
+    background-color: transparent;
+    opacity: 100%;
+    margin: 0 auto;
+    max-width: 426px;
+    position: relative;
+  }
+
+  .nombre-cuadro {
+    display: flex;
+    align-items: flex-start; /* Ajusta los elementos al inicio de la sección */
+    margin-top: 0px;
+    align-content: normal;
+  }
+
+  .cuadro-rojo {
+    width: 45px;
+    height: 55px;
+    margin-right: 20px;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .cuadro-rojo img {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .nombre {
+    display: flex;
+    margin-left: 10px;
+    align-content: normal;
+  }
+
+  h1 {
+    font-size: medium;
+    margin: none;
+    margin-left: -5px;
+    margin-top: -40px;
+    white-space: nowrap; /* Impide que el texto se rompa en varias líneas */
+   
+  }
+
+  h2.letrasRojas {
+    display: flex;
+    font-size: x-small;
+    margin-top: 80px;
+    text-align: left;
+    margin-left: -145px;
+    margin-top: 30px;
+  }
+
+  .sobreMi{
+    margin-top: 30px;
+    font-size: x-small;
+  }
+
+  .letraColorBlanco {
+    font-size: xx-small;
+    margin-left: 0px;
+   
+}
+
+.listaRojo {
+  list-style-type: none;
+  padding: 0;
+  font-size: xx-small;
+}
+
+.contacto li {
+  margin-left: 20px; 
+  background: url('celular.png') no-repeat left center; 
+  background-size: 12px 12px; 
+  padding-left: 20px; 
+  margin-bottom: 20px;
+  font-size: xx-small;
+  margin-bottom: 5px;
+
+
+}
+
+.contacto li:nth-child(2) {
+  margin-left: 20px; 
+  background: url('mail.png') no-repeat left center; 
+  background-size: 12px 12px; 
+  padding-left: 20px; 
+}
+
+.contacto li:nth-child(3) {
+  margin-left: 20px; 
+  background: url('direccion.png') no-repeat left center; 
+  background-size: 12px 12px; 
+  padding-left: 20px; 
+
+}
+
+.contacto li:nth-child(4) {
+  margin-left: 20px; 
+  background: url('linkedin.png') no-repeat left center; 
+  background-size: 12px 12px; 
+  padding-left: 20px; 
+}
+
+.boton{
+  display: none;
+}
+
+#formacion {
+  margin-left: 10px;
+  padding-left: 0px;
+}
+
+.tabla {
+  width: 160%;
+  border-collapse: collapse; 
+  z-index: 2;
+  margin-top: 15px;
+  }
+
+}
+
+@media screen and (max-width: 376px) {
+  .izquierda {
+    width: 64%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .derecha {
+    width: 36%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+  .tabla {
+    width: 160%;
+    border-collapse: collapse; 
+    z-index: 2;
+    margin-top: 15px;
+    }
+}
